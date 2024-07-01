@@ -554,6 +554,11 @@ top: 10px;
     justify-content: center;
     margin-top: 20px;
 }
+.g-recaptcha {
+    margin-right: 10px;
+    height: 55px;
+    border: none important!;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
