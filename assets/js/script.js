@@ -23,6 +23,7 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+    
 (function() {
     emailjs.init("zhgreb4n0uEQKuc1d"); 
 })();
@@ -90,3 +91,4 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             });
         });
 });
+
