@@ -28,67 +28,75 @@ menuIcon.onclick = () => {
     emailjs.init("zhgreb4n0uEQKuc1d"); 
 })();
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
 
-    const recaptchaResponse = grecaptcha.getResponse();
-    if (recaptchaResponse.length === 0) {
-        Swal.fire({
-            title: "Erro!",
-            text: "Por favor, complete o reCAPTCHA.",
-            icon: "error",
-            width: '450px',
-            padding: '3em',
-            customClass: {
-                popup: 'swal2-popup-custom'
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (!recaptchaResponse) {
+                Swal.fire({
+                    title: "Erro!",
+                    text: "Por favor, complete o reCAPTCHA.",
+                    icon: "error",
+                    width: '450px',
+                    padding: '3em',
+                    customClass: {
+                        popup: 'swal2-popup-custom'
+                    }
+                });
+                return;
             }
-        });
-        return;
-    }
 
-    const form = event.target;
-    if (!form.checkValidity()) {
-        Swal.fire({
-            title: "Erro!",
-            text: "Por favor, preencha todos os campos obrigatórios.",
-            icon: "error",
-            width: '450px',
-            padding: '3em',
-            customClass: {
-                popup: 'swal2-popup-custom'
+            const form = event.target;
+            if (!form.checkValidity()) {
+                Swal.fire({
+                    title: "Erro!",
+                    text: "Por favor, preencha todos os campos obrigatórios.",
+                    icon: "error",
+                    width: '450px',
+                    padding: '3em',
+                    customClass: {
+                        popup: 'swal2-popup-custom'
+                    }
+                });
+                return;
             }
+
+            const serviceID = 'service_0m8007g'; 
+            const templateID = 'template_qw71pr7'; 
+
+            emailjs.sendForm(serviceID, templateID, form)
+                .then(() => {
+                    Swal.fire({
+                        title: "Tudo certo!",
+                        text: "Sua mensagem foi enviada com sucesso!",
+                        icon: "success",
+                        width: '450px',
+                        padding: '3em',
+                        customClass: {
+                            popup: 'swal2-popup-custom'
+                        }
+                    });
+                    form.reset();
+                    grecaptcha.reset();
+                }, (err) => {
+                    Swal.fire({
+                        title: "Erro!",
+                        text: "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.",
+                        icon: "error",
+                        width: '450px',
+                        padding: '3em',
+                        customClass: {
+                            popup: 'swal2-popup-custom'
+                        }
+                    });
+                });
         });
-        return;
+    } else {
+        console.error("Elemento #contact-form não encontrado.");
     }
-
-    const serviceID = 'service_0m8007g'; 
-    const templateID = 'template_qw71pr7'; 
-
-    emailjs.sendForm(serviceID, templateID, form)
-        .then(() => {
-            Swal.fire({
-                title: "Tudo certo!",
-                text: "Sua mensagem foi enviada com sucesso!",
-                icon: "success",
-                width: '450px',
-                padding: '3em',
-                customClass: {
-                    popup: 'swal2-popup-custom'
-                }
-            });
-            form.reset();
-            grecaptcha.reset();
-        }, (err) => {
-            Swal.fire({
-                title: "Erro!",
-                text: "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.",
-                icon: "error",
-                width: '450px',
-                padding: '3em',
-                customClass: {
-                    popup: 'swal2-popup-custom'
-                }
-            });
-        });
 });
+
 
