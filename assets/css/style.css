@@ -513,28 +513,36 @@ top: 10px;
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
 }
-.contact{
-   background-color: var(--bg-color); 
+.contact {
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 4rem 0;
 }
-.contact h2{
+
+.contact h2 {
     margin-bottom: 3rem;
     color: white;
 }
-.contact form{
+
+.contact form {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    margin: 5rem auto;
-    text-align: center;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 800px; /* Ajuste o valor conforme necessário */
 }
-.contact form .input-box{
+
+.contact .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
-.contact form .input-box input,
-.contact form textarea{
+
+.contact .input-box input,
+.contact textarea {
     width: 100%;
     padding: 2.5rem;
     font-size: 1.8rem;
@@ -545,9 +553,26 @@ top: 10px;
     margin: 1.5rem 0;
     resize: none;
 }
-.contact form .btn{
-    margin-top: 2rem;
+
+.contact .g-recaptcha {
+    margin-top: 1rem;
 }
+
+.contact .btn {
+    margin-top: 2rem;
+    background-color: var(--main-color);
+    color: white;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.contact .btn:hover {
+    background-color: darken(var(--main-color), 10%);
+}
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
