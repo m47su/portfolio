@@ -251,27 +251,25 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Me <span>Contate</span></h2>
-    
+
         <form id="contact-form">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" name="from_name" placeholder="Nome Completo">
-                    <input type="email" name="email_id" placeholder="E-mail">
+                    <input type="text" name="from_name" placeholder="Nome Completo" required>
+                    <input type="email" name="email_id" placeholder="E-mail" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" name="phone_number" placeholder="Número de Celular">
-                    <input type="text" name="subject" placeholder="Assunto">
+                    <input type="number" name="phone_number" placeholder="Número de Celular" required>
+                    <input type="text" name="subject" placeholder="Assunto" required>
                 </div>
             </div>
             <div class="input-group-2">
-                <textarea name="message" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
                 <div class="g-recaptcha" data-sitekey="6Lfv8wUqAAAAABBwdvVIh6TzTbR86ZQLGhPc9wR4"></div>
-       
                 <input type="submit" value="Send Message" class="btn">
-                
             </div>
         </form>
-    </section>    
+    </section>  
 
     <footer class="footer">
         <div class="social">
