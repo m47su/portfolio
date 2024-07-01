@@ -552,12 +552,11 @@ top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px; /* Ajuste conforme necessário */
+    margin-top: 20px;
 }
 .g-recaptcha {
-    margin-right: 10px; /* Espaçamento entre o recaptcha e o botão */
+    margin-right: 10px;
     height: 55px;
-    border: 2px solid var(--main-color);
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
