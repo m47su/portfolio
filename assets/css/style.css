@@ -127,6 +127,7 @@ span{
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
+    text-align: justify;
 }
 .social-icons a{
     display: inline-flex;
