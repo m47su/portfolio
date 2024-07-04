@@ -766,6 +766,9 @@ input[type=number] {
         width: 60vw;
         top: 3rem;
     }
+    .home-img img {
+        animation: pulse 3s infinite;
+    }
     .contact form textarea {
         height: 20rem; 
         width: 39rem;
@@ -815,6 +818,9 @@ input[type=number] {
         width: 70vw;
         top: 2rem;
     }
+    .home-img img {
+        animation: pulse 3s infinite;
+    }
     .contact form textarea {
         height: 20rem; 
         width: 39rem;
@@ -847,5 +853,16 @@ input[type=number] {
 
     .footer .copyright {
         font-size: 12px;
+    }
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 25px var(--main-color);
+    }
+    50% {
+        box-shadow: 0 0 50px var(--main-color);
+    }
+    100% {
+        box-shadow: 0 0 25px var(--main-color);
     }
 }
