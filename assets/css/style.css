@@ -351,64 +351,75 @@ top: 10px;
     background-color: var(--bg-color);
     width: 50px;
 }
-.services{
+.services {
     background: var(--bg-color);
     color: black;
 }
-.services h2{
+
+.services h2 {
     margin-bottom: 5rem;
     color: white;
 }
-.services-container{
+
+.services-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
-.service-box{
+
+.service-box {
     background-color: var(--main-color);
-    height: 300px;
+    min-height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.service-box:hover{
+
+.service-box:hover {
     background: white;
     color: black;
     border: 5px solid var(--main-color);
     transform: scale(1.03);
 }
-.service-box .service-info{
+
+.service-box .service-info {
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 200px;
     justify-content: left;
     align-items: baseline;
-    padding: 5rem 5rem;
+    padding: 5rem;
 }
-.service-info h4{
-    font-size: 3rem;
+
+.service-info h4 {
+    font-size: 3.2rem;
     font-weight: 800;
     line-height: 2;
 }
-.service-info p{
-    font-size: 1.6rem;
+
+.service-info p {
+    font-size: 1.9rem;
     font-weight: 600;
-    max-height: 100px;
     line-height: 1.7;
     margin: auto;
 }
+
 .services-icon {
     position: absolute;
     top: 15px;
     right: 15px;
-    font-size: 40px; 
-    color: #000; 
+    font-size: 40px;
+    color: #000;
 }
+
 .service-info {
     position: relative;
+}
+
+.projects{
+    background: var(--second-bg-color);
 }
 .projects-container {
     display: flex;
@@ -552,10 +563,11 @@ top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
+
 .g-recaptcha {
-    margin-right: 10px;
+    margin-right: 10px; 
     height: 55px;
 }
 input[type=number]::-webkit-inner-spin-button,
@@ -719,5 +731,121 @@ input[type=number] {
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-box {
+        min-height: auto;
+    }
+
+    .service-box .service-info {
+        padding: 2rem;
+    }
+    .heading {
+        font-size: 5rem; 
+        margin: 3rem 0;  
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .text-animation {
+        font-size: 2rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+        top: 3rem;
+    }
+    .contact form textarea {
+        height: 20rem; 
+        width: 39rem;
+    }
+    .submit-group-contact {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 5rem; 
+    }
+    .footer .social a {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 0 5px;
+    }
+
+    .footer ul li {
+        padding: 0 10px;
+    }
+
+    .footer ul {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 4rem; 
+        margin: 2rem 0;  
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .text-animation {
+        font-size: 1.5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        top: 2rem;
+    }
+    .contact form textarea {
+        height: 20rem; 
+        width: 39rem;
+    }
+    .submit-group-contact {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 5rem; 
+    }
+    .footer {
+        padding: 20px 0;
+    }
+    .footer .social a {
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 3px;
+    }
+
+    .footer ul {
+        font-size: 12px;
+    }
+
+    .footer ul li {
+        padding: 0 5px;
+    }
+
+    .footer .copyright {
+        font-size: 12px;
     }
 }
