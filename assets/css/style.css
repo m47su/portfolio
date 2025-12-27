@@ -341,6 +341,7 @@ top: 10px;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
+    text-align: justify;
 }
 ::-webkit-scrollbar{
     width: 15px;
@@ -405,6 +406,7 @@ top: 10px;
     font-weight: 600;
     line-height: 1.7;
     margin: auto;
+    text-align: justify;
 }
 
 .services-icon {
