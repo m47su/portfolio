@@ -70,6 +70,28 @@ body{
     display: none;
 }
 
+.btn-lang {
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    margin-left: 2rem;
+    transition: 0.3s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
 section{ 
     min-height: 10;
     padding: 10rem 12% 10rem;

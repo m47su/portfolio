@@ -1,449 +1,403 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/icon/star.png" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script type="module" src="./assets/js/script.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header class="header">
-      <a href="#home" class="logo">Yasmin <span>Neves</span></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./img/icon/star.png" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="module" src="./assets/js/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+</head>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">Yasmin <span>Neves</span></a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Início</a>
-        <a href="#education">Educação</a>
-        <a href="#services">Serviços</a>
-        <a href="#projects">Projetos</a>
-        <a href="#contact">Contato</a>
-      </nav>
-    </header>
+    <i class="bx bx-menu" id="menu-icon"></i>
 
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Olá, é a <span>Yasmin</span></h1>
-        <h3 class="text-animation">Eu sou <span></span></h3>
-        <p>
-          Desde a minha adolescência, eu fui apaixonada por tecnologia. Foi nos
-          torneios de robótica que entrei nesse mundo e nunca mais saí, e nem
-          tenho vontade! Adoro usar minha criatividade para criar designs, ver
-          as minhas ideias criarem forma. Só programador entende a satisfação
-          que é um Backend funcionando certinho com o Frontend, né?! E eu amo
-          isso!
-        </p>
+    <nav class="navbar">
+      <a href="#home" class="active" data-i18n="nav_home">Início</a>
+      <a href="#education" data-i18n="nav_edu">Educação</a>
+      <a href="#services" data-i18n="nav_serv">Serviços</a>
+      <a href="#projects" data-i18n="nav_proj">Projetos</a>
+      <a href="#contact" data-i18n="nav_cont">Contato</a>
+      <button id="lang-switch" class="btn-lang">EN</button>
+    </nav>
+  </header>
 
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/yasmin-neves-7a0878248/"
-            target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/m47su" target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="https://www.instagram.com/" target="_blank"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://twitter.com/" target="_blank"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-        </div>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1 data-i18n="home_title">Olá, é a <span>Yasmin</span></h1>
+      <h3 class="text-animation" data-i18n="home_subtitle">
+        Eu sou <span></span>
+      </h3>
+      <p data-i18n="home_desc">
+        Desde a minha adolescência, eu fui apaixonada por tecnologia. Foi nos
+        torneios de robótica que entrei nesse mundo e nunca mais saí, e nem
+        tenho vontade! Adoro usar minha criatividade para criar designs e ver
+        as minhas ideias criarem forma. Só programador entende a satisfação
+        que é um Backend funcionando certinho com o Frontend, né?! E eu amo
+        isso!
+      </p>
 
-        <div class="btn-group">
-          <a href="#contact" class="btn">Contratar</a>
-          <a href="#contact" class="btn">Contato</a>
-        </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/yasmin-neves-7a0878248/" target="_blank"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/m47su" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="bx bxl-twitter"></i></a>
       </div>
-      <div class="home-img">
-        <img src="./img/image.jpg" alt="" />
-      </div>
-    </section>
 
-    <section class="education" id="education">
-      <h2 class="heading">Educação</h2>
-
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2022</div>
-          <div class="timeline-content">
-            <h3>Ensino Médio</h3>
-            <p>
-              Me formei na escola SESI em Vila Velha - ES , no Ensino Médio
-              integrado com Técnico em Matemática e suas Engenharias, já tendo
-              aulas de programação e entendendo desde nova a linguagem C.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2023</div>
-          <div class="timeline-content">
-            <h3>Graduação Técnica</h3>
-            <p>
-              Aprendi Java, PHP, HTML, CSS, MySQL, Banco de Dados e Git no SENAI
-              Vitória - ES. Que foram minha base para entender mais desse mundo
-              da programação. Também fiz um TCC implementado no sistema do curso
-              técnico.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2023</div>
-          <div class="timeline-content">
-            <h3>Faculdade</h3>
-            <p>
-              Estou atualmente cursando a Faculdade de Análise e Desenvolvimento
-              de Sistemas no IFBA - Campus Santo Antônio de Jesus. Com uma grade
-              curricular excelente, ensinando os fundamentos da programação.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2023</div>
-          <div class="timeline-content">
-            <h3>Prefeitura de Vila Velha - Espírito Santo</h3>
-            <p>
-              Obtive a experiência profissional com Desenvolvimento de Sistemas
-              e Suporte Técnico. Minhas atividades se davam por: criar programas
-              para a Prefeitura, responder e-mails e ligações do Suporte
-              Técnico.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2023</div>
-          <div class="timeline-content">
-            <h3>Ambiente Engenharia</h3>
-            <p>
-              Obtive experiência profissional com Desenvolvimento de Sistema de
-              Estoque Web. Sendo Arquiteta de Software, fazendo as partes:
-              Frontend, Backend, Web Design e DataBase.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024</div>
-          <div class="timeline-content">
-            <h3>MMA Sistemas</h3>
-            <p>
-              Obtive experiência profissional em Desenvolvimento de Sistemas de
-              Programação, Frontend e Backend. Utilizando a linguagem Delphi XE,
-              SQL e PHP. E Suporte Técnico ao cliente via telefone.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2025</div>
-          <div class="timeline-content">
-            <h3>SAMU Reconvale - CNPq</h3>
-            <p>
-              Estou atuando em um projeto de iniciação científica promovido pelo
-              CNPq no SAMU Reconvale, o PET Saúde, que instiga a área de
-              tecnologia e medicina a trabalharem juntas para desenvolver
-              soluções inovadoras para o setor de saúde em 31 municípios da
-              Bahia. Letramento digital, capacitações e desenvolvimento de um
-              sistema de estoque para gerenciamento de medicamentos são um dos
-              feitos realizados até o momento.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <h2 class="heading">Serviços</h2>
-
-      <div class="services-container">
-        <div class="service-box">
-          <div class="service-info">
-            <h4>Web Design</h4>
-            <div class="services-icon"><i class="bx bxs-palette icon"></i></div>
-            <p>
-              No Web Design, combino criatividade e técnica para criar
-              interfaces visuais atraentes e funcionais. Meu foco é proporcionar
-              uma experiência de usuário intuitiva e agradável, utilizando as
-              melhores práticas de design responsivo e acessibilidade.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <div class="service-info">
-            <h4>Frontend Developer</h4>
-            <div class="services-icon"><i class="bx bx-code-block"></i></div>
-            <p>
-              No Desenvolvimento Frontend, sou proficiente em HTML, CSS e
-              JavaScript, além de frameworks modernos como React e Java Spring.
-              Minha habilidade em traduzir designs em código limpo e eficiente
-              garante que as interfaces sejam dinâmicas, interativas e
-              perfeitamente integradas.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <div class="service-info">
-            <h4>Backend Developer</h4>
-            <div class="services-icon"><i class="bx bxs-data"></i></div>
-            <p>
-              No Desenvolvimento Backend, tenho experiência com linguagens e
-              frameworks como PHP e Delphi XE. Trabalho com bancos de dados
-              relacionais e não relacionais, como MySQL, PHPMyAdmin e DBeaver,
-              assegurando que a lógica de negócio e as operações de dados sejam
-              robustas e escaláveis.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-box">
-          <div class="service-info">
-            <h4>Software Developer</h4>
-            <div class="services-icon"><i class="bx bxs-bulb"></i></div>
-            <p>
-              No Desenvolvimento de Software, aplico princípios de engenharia de
-              software para projetar, desenvolver e manter aplicações de alta
-              qualidade. Tenho experiência com metodologias ágeis e controle de
-              versão (Git), garantindo um ciclo de desenvolvimento eficiente e
-              colaborativo.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <h2 class="heading">Projetos</h2>
-
-      <div class="projects-container">
-        <div class="project-box">
-          <img src="./img/1.svg" alt="Project 1" />
-          <div class="project-info">
-            <div class="project-text">
-              <h4>Portfólio</h4>
-              <div class="stars">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-            <div class="info-icon">
-              <a href="#"><i class="bx bx-search"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <img src="./img/codeup.png" alt="Project 2" />
-          <div class="project-info">
-            <div class="project-text">
-              <h4>Code Up</h4>
-              <div class="stars">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-            <div class="info-icon">
-              <a
-                href="https://m47su.github.io/codeup/index.html"
-                target="_blank"
-                ><i class="bx bx-search"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <img src="./img/multiversidade.png" alt="Project 3" />
-          <div class="project-info">
-            <div class="project-text">
-              <h4>Multiversidade</h4>
-              <div class="stars">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-            <div class="info-icon">
-              <a
-                href="https://chopanaodjango.github.io/multiversidade-mae-preta/"
-                target="_blank"
-                ><i class="bx bx-search"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <img src="./img/autisgirls.png" alt="Project 2" />
-          <div class="project-info">
-            <div class="project-text">
-              <h4>TIM Autisgirls</h4>
-              <div class="stars">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-            <div class="info-icon">
-              <a href="https://m47su.github.io/autisgirls/" target="_blank"
-                ><i class="bx bx-search"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-box">
-          <img src="./img/livro.png" alt="Project 3" />
-          <div class="project-info">
-            <div class="project-text">
-              <h4 style="font-size: 4.2rem">Livro de Memórias</h4>
-              <div class="stars">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-              </div>
-            </div>
-            <div class="info-icon">
-              <a
-                href="https://m47su.github.io/livro-de-memorias/"
-                target="_blank"
-                ><i class="bx bx-search"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Me <span>Contate</span></h2>
-
-      <form id="contact-form">
-        <div class="input-group">
-          <div class="input-box">
-            <input
-              type="text"
-              name="from_name"
-              placeholder="Nome Completo"
-              required
-            />
-            <input type="email" name="email" placeholder="E-mail" required />
-          </div>
-          <div class="input-box">
-            <input
-              type="number"
-              name="phone_number"
-              placeholder="Número de Celular"
-              required
-            />
-            <input type="text" name="subject" placeholder="Assunto" required />
-          </div>
-        </div>
-        <div class="input-group-2">
-          <textarea
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Sua Mensagem"
-            required
-          ></textarea>
-          <div class="submit-group-contact">
-            <div
-              class="g-recaptcha"
-              data-sitekey="6Lfv8wUqAAAAABBwdvVIh6TzTbR86ZQLGhPc9wR4"
-            ></div>
-            <input type="submit" value="Enviar Mensagem" class="btn" />
-          </div>
-        </div>
-      </form>
-    </section>
-
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
+      <div class="btn-group">
+        <a href="#contact" class="btn" data-i18n="contact_hire" type="submit">Contratar</a>
+        <a href="#contact" class="btn" data-i18n="contact_contact" type="submit">Contato</a>
       </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget("https://vlibras.gov.br/app");
-    </script>
+    <div class="home-img">
+      <img src="./img/image.jpg" alt="" />
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="social">
-        <a
-          href="https://www.linkedin.com/in/yasmin-neves-7a0878248/"
-          target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a href="https://github.com/m47su" target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a href="https://twitter.com/" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
+  <section class="education" id="education">
+    <h2 class="heading" data-i18n="educ_tittle">Educação</h2>
+
+    <div class="timeline-items">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022</div>
+        <div class="timeline-content">
+          <h3 data-i18n="educ_tittle_highschool">Ensino Médio</h3>
+          <p data-i18n="educ_desc_highschool">
+            Me formei na escola SESI em Vila Velha - ES , no Ensino Médio
+            integrado com Técnico em Matemática e suas Engenharias, já tendo
+            aulas de programação e entendendo desde nova a linguagem C.
+          </p>
+        </div>
       </div>
 
-      <ul class="list">
-        <li>
-          <a href="#">FAQ</a>
-        </li>
-        <li>
-          <a href="#">Serviços</a>
-        </li>
-        <li>
-          <a href="#">Sobre Mim</a>
-        </li>
-        <li>
-          <a href="#">Contatar</a>
-        </li>
-        <li>
-          <a href="#">Projetos</a>
-        </li>
-        <p class="copyright">© Yasmin Neves | Todos os direitos reservados</p>
-      </ul>
-    </footer>
-  </body>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">
+          <h3 data-i18n="educ_tittle_technical_course">Graduação Técnica</h3>
+          <p data-i18n="educ_desc_technical_course">
+            Aprendi Java, PHP, HTML, CSS, MySQL, Banco de Dados e Git no SENAI
+            Vitória - ES. Que foram minha base para entender mais desse mundo
+            da programação. Também fiz um TCC implementado no sistema do curso
+            técnico.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">
+          <h3 data-i18n="educ_tittle_college">Faculdade</h3>
+          <p data-i18n="educ_desc_college">
+            Estou atualmente cursando a Faculdade de Análise e Desenvolvimento
+            de Sistemas no IFBA (Instituto Federal de Educação, Ciência e Tecnologia da Bahia) - Campus Santo Antônio de Jesus. Com uma grade
+            curricular excelente, ensinando os fundamentos da programação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education" style="padding: 45px 15px;">
+    <h2 class="heading" data-i18n="xp_tittle">Experiência Profissional</h2>
+  <div class="timeline-items">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2023</div>
+      <div class="timeline-content">
+        <h3 data-i18n="xp_tiitle1">Prefeitura de Vila Velha - Espírito Santo</h3>
+        <p data-i18n="xp_desc1">
+          Obtive a experiência profissional com Desenvolvimento de Sistemas e
+          Suporte Técnico. Minhas atividades se davam por: criar programas
+          para a Prefeitura, responder e-mails e ligações do Suporte Técnico.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2023</div>
+      <div class="timeline-content">
+        <h3>Ambiente Engenharia</h3>
+        <p data-i18n="xp_desc2">
+          Obtive experiência profissional com Desenvolvimento de Sistema de
+          Estoque Web. Sendo Arquiteta de Software, fazendo as partes:
+          Frontend, Backend, Web Design e DataBase.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2024</div>
+      <div class="timeline-content">
+        <h3 data-i18n="xp_tittle3">MMA Sistemas</h3>
+        <p data-i18n="xp_desc3">
+          Obtive experiência profissional em Desenvolvimento de Sistemas de
+          Programação, Frontend e Backend. Utilizando a linguagem Delphi XE,
+          SQL e PHP. E Suporte Técnico ao cliente via telefone.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2025</div>
+      <div class="timeline-content">
+        <h3>SAMU Reconvale - CNPq</h3>
+        <p data-i18n="xp_desc4">
+          Estou atuando em um projeto de iniciação científica promovido pelo
+          CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico) 
+          no SAMU Reconvale, o PET Saúde, que instiga a área de
+          tecnologia e medicina a trabalharem juntas para desenvolver soluções
+          inovadoras para o setor de saúde em 31 municípios da Bahia.
+          Letramento digital, capacitações e desenvolvimento de um sistema de
+          estoque para gerenciamento de medicamentos são um dos feitos
+          realizados até o momento.
+        </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services" id="services">
+    <h2 class="heading" data-i18n="services_title">Serviços</h2>
+
+    <div class="services-container">
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Web Design</h4>
+          <div class="services-icon"><i class="bx bxs-palette icon"></i></div>
+          <p data-i18n="services_webdesign">
+            No Web Design, combino criatividade e técnica para criar
+            interfaces visuais atraentes e funcionais. Meu foco é proporcionar
+            uma experiência de usuário intuitiva e agradável, utilizando as
+            melhores práticas de design responsivo e acessibilidade.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Frontend Developer</h4>
+          <div class="services-icon"><i class="bx bx-code-block"></i></div>
+          <p data-i18n="services_frontend">
+            No Desenvolvimento Frontend, sou proficiente em HTML, CSS e
+            JavaScript, além de frameworks modernos como React e Java Spring.
+            Minha habilidade em traduzir designs em código limpo e eficiente
+            garante que as interfaces sejam dinâmicas, interativas e
+            perfeitamente integradas.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Backend Developer</h4>
+          <div class="services-icon"><i class="bx bxs-data"></i></div>
+          <p data-i18n="services_backend">
+            No Desenvolvimento Backend, tenho experiência com linguagens e
+            frameworks como PHP e Delphi XE. Trabalho com bancos de dados
+            relacionais e não relacionais, como MySQL, PHPMyAdmin e DBeaver,
+            assegurando que a lógica de negócio e as operações de dados sejam
+            robustas e escaláveis.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-info">
+          <h4>Software Developer</h4>
+          <div class="services-icon"><i class="bx bxs-bulb"></i></div>
+          <p data-i18n="services_softwaredev">
+            No Desenvolvimento de Software, aplico princípios de engenharia de
+            software para projetar, desenvolver e manter aplicações de alta
+            qualidade. Tenho experiência com metodologias ágeis e controle de
+            versão (Git), garantindo um ciclo de desenvolvimento eficiente e
+            colaborativo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="heading" data-i18n="projects_title">Projetos</h2>
+
+    <div class="projects-container">
+      <div class="project-box">
+        <img src="./img/1.svg" alt="Project 1" />
+        <div class="project-info">
+          <div class="project-text">
+            <h4 data-i18n="projects_portfolio">Portfólio</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="info-icon">
+            <a href="#"><i class="bx bx-search"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="./img/codeup.png" alt="Project 2" />
+        <div class="project-info">
+          <div class="project-text">
+            <h4>Code Up</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="info-icon">
+            <a href="https://m47su.github.io/codeup/index.html" target="_blank"><i class="bx bx-search"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="./img/multiversidade.png" alt="Project 3" />
+        <div class="project-info">
+          <div class="project-text">
+            <h4>Multiversidade</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="info-icon">
+            <a href="https://chopanaodjango.github.io/multiversidade-mae-preta/" target="_blank"><i
+                class="bx bx-search"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="./img/autisgirls.png" alt="Project 2" />
+        <div class="project-info">
+          <div class="project-text">
+            <h4>TIM Autisgirls</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="info-icon">
+            <a href="https://m47su.github.io/autisgirls/" target="_blank"><i class="bx bx-search"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="./img/livro.png" alt="Project 3" />
+        <div class="project-info">
+          <div class="project-text">
+            <h4 style="font-size: 4.2rem" data-i18n="projects_bookmemories">Livro de Memórias</h4>
+            <div class="stars">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+          </div>
+          <div class="info-icon">
+            <a href="https://m47su.github.io/livro-de-memorias/" target="_blank"><i class="bx bx-search"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="heading" data-i18n="contact_title_final">Me <span>Contate</span></h2>
+
+    <form id="contact-form">
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" name="from_name" data-i18n="ph_name" placeholder="Nome Completo" required />
+          <input type="email" name="email" data-i18n="ph_email" placeholder="E-mail" required />
+        </div>
+        <div class="input-box">
+          <input type="number" name="phone_number" data-i18n="ph_phone_number" placeholder="Número de Celular" required />
+          <input type="text" name="subject" data-i18n="ph_subject" placeholder="Assunto" required />
+        </div>
+      </div>
+      <div class="input-group-2">
+        <textarea name="message" cols="30" rows="10" data-i18n="ph_message" placeholder="Sua Mensagem" required></textarea>
+        <div class="submit-group-contact">
+          <div class="g-recaptcha" data-sitekey="6Lfv8wUqAAAAABBwdvVIh6TzTbR86ZQLGhPc9wR4"></div>
+          <input type="submit" data-i18n="ph_contact_send" value="Enviar Mensagem" class="btn" />
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/yasmin-neves-7a0878248/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://github.com/m47su" target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="bx bxl-twitter"></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+      <li>
+        <a href="#" data-i18n="nav_serv">Serviços</a>
+      </li>
+      <li>
+        <a href="#" data-i18n="nav_about">Sobre Mim</a>
+      </li>
+      <li>
+        <a href="#" data-i18n="nav_cont">Contatar</a>
+      </li>
+      <li>
+        <a href="#" data-i18n="nav_proj">Projetos</a>
+      </li>
+      <p class="copyright" data-i18n="copyright">© Yasmin Neves | Todos os direitos reservados</p>
+    </ul>
+  </footer>
+</body>
+
 </html>
